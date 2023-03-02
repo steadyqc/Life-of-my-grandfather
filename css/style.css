@@ -112,6 +112,7 @@ body.dark-mode a:hover {
   article {
     max-width: 100%;
     padding: 0 1em;
+    margin: 0 1em;
   }
 
   nav {
@@ -124,6 +125,8 @@ body.dark-mode a:hover {
   }
 
   nav li {
+    font-size: 1em;
+    margin-left: 1em;
     margin-right: 0;
     margin-bottom: 0.3 rem;
   }
@@ -150,6 +153,7 @@ body.dark-mode a:hover {
   }
 
   button {
+    font-size: 0.9em;
     margin-bottom: 1rem;
     margin-right: -0.2rem;
   }
@@ -187,6 +191,10 @@ nav a {
 
 nav a:hover {
   border-bottom: 3px solid #0077cc;
+}
+
+.settings {
+  margin-left: 1rem;
 }
 
 #toggle-dark-mode {
