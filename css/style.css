@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   color: #333;
   background-color: #f6f6f6;
@@ -23,10 +23,10 @@ body.dark-mode {
 }
 
 article {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 1.25rem;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #333;
 }
 
@@ -36,7 +36,6 @@ article.dark-mode {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Georgia", serif;
   font-weight: bold;
   line-height: 1.2;
   margin-top: 1em;
@@ -215,6 +214,7 @@ img {
 }
 
 .chapter-content {
+  max-width: 840px;
   padding: 1em;
   background-color: #f6f6f6;
   color: #333;
@@ -222,6 +222,7 @@ img {
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
   margin-bottom: 1em;
+  line-height: 1.5;
 }
 
 body.dark-mode .chapter-content {
