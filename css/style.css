@@ -25,7 +25,7 @@ body.dark-mode {
 article {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.25rem;
   font-size: 1rem;
   color: #333;
 }
@@ -110,8 +110,57 @@ body.dark-mode a:hover {
 
 @media screen and (max-width: 800px) {
   article {
-    padding: 10px;
-    font-size: 1rem;
+    max-width: 100%;
+    padding: 0 1em;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 0.3 rem;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin-top: 0.9em;
+    margin-bottom: 0.5em;
+  }
+
+  p, figcaption {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+  }
+
+  button {
+    margin-bottom: 1rem;
+    margin-right: -0.2rem;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer {
+    width: 100%;
   }
 }
 
@@ -119,7 +168,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #f6f6f6;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -132,7 +181,7 @@ nav.dark-mode {
 nav a {
   color: #0077cc;
   text-decoration: none;
-  padding: 5px;
+  padding: 0.3 rem;
   border-bottom: 3px solid transparent;
 }
 
@@ -141,7 +190,8 @@ nav a:hover {
 }
 
 #toggle-dark-mode {
-  padding: 10px;
+  padding: 0.625rem;
+  margin-bottom: 0.5rem;
   background-color: #333;
   color: #f6f6f6;
   border: 1px solid #f6f6f6;
@@ -151,20 +201,6 @@ nav a:hover {
 
 #toggle-dark-mode:hover {
   background-color: #555;
-}
-
-@media screen and (max-width: 800px) {
-  nav {
-    flex-wrap: wrap;
-  }
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav li {
-    margin-right: 0;
-    margin-bottom: 5px;
-  }
 }
 
 img {
@@ -187,8 +223,8 @@ body.dark-mode .chapter-content {
 }
 
 button {
-  padding: 10px;
-  margin-left: 0.5rem;
+  padding: 0.625rem;
+  margin-left: 0.25rem;
   background-color: #333;
   color: #f6f6f6;
   border: none;
@@ -203,4 +239,8 @@ button:hover {
 body.dark-mode button:hover {
   background-color: #ccc;
   color: #333;
+}
+
+.footer-wrapper {
+  margin-left: 0.5rem;
 }
